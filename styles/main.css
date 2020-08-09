@@ -1,3 +1,5 @@
+/*Css - Cascading Style Sheets */
+
 :root {
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
@@ -9,6 +11,7 @@
     --color-secondary-dark: #04BF58;
     --color-title-in-primary: #FFFFFF;
     --color-text-in-primary: #D4C2FF;
+    /*Variaveis*/
     --color-text-title: #32264D;
     --color-text-complement: #9C98A6;
     --color-text-base: #6A6180;
@@ -16,9 +19,10 @@
     --color-input-background: #F8F8FC;
     --color-button-text: #FFFFFF;
     --color-box-base: #FFFFFF;
-    --color-box-footer: #4e4eb9;
+    --color-box-footer: #FAFAFC;
     --color-small-info: #C1BCCC;
-    font-size: 60%; /* controle das medidas rem */
+    font-size: 60%;
+    /* controle das medidas rem */
 }
 
 * {
@@ -29,7 +33,7 @@
 
 html,
 body {
-    height: 100vh; /* Altura */
+    height: 100vh;
 }
 
 body {
@@ -43,7 +47,6 @@ body,
 input,
 button,
 textarea {
-    /* font: 500 1.6rem Poppins; */
     font-weight: 500;
     font-family: Poppins;
     font-size: 1.6rem;
@@ -51,6 +54,12 @@ textarea {
 }
 
 #container {
-    width: 90vh; 
+    width: 90vw;
     max-width: 700px;
+}
+
+@media (min-width: 700px) {
+     :root {
+        font-size: 62.5%;
+    }
 }
